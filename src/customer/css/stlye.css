@@ -1,3 +1,6 @@
-head {
+#head {
     background-color: #8B0000;
+}
+#mike {
+    border: 2px red solid;
 }
