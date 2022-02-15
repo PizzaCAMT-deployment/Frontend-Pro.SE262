@@ -1,8 +1,27 @@
 {
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
-  }
+  },
+  "name": "customer",
+  "version": "1.0.0",
+  "description": "customer UI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikeVasaski/Frontend-Pro.SE262.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MikeVasaski/Frontend-Pro.SE262/issues"
+  },
+  "homepage": "https://github.com/MikeVasaski/Frontend-Pro.SE262#readme"
 }
