@@ -1,9 +1,18 @@
-var express = require('express');
-var app = express();
-const port = 3000;
+const express = require('express');
+const app = express();
+
+const port = 4040;
+
+//static to called CSS
+app.use(express.static('public'));
+
+// Set views 
+app.set('views', './views');
+app.set('view engine', 'ejs');
+
 
 app.get('/', function(req, res){
-    res.sendFile(__dirname + "/view/index.html");
+    res.render('index', { text: "This is MY index" })
 });
 
 app.listen(port, function(){
