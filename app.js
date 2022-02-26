@@ -6,7 +6,7 @@ const port = 4040;
 
 //static to called CSS
 app.use(express.static('public'));
-app.use('/css', express.static(__dirname + 'public/css'))
+app.use('/css', express.static(__dirname + '/public/css'))
 
 // Set views 
 app.set('views', './views');
