@@ -1,11 +1,11 @@
 body{
     font-family: Helvetica;
-
     /* Set Background */
-    background-image: url("../image/customer/bg1.jpg");
+    background-image: url("../img/customer/bg1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
+    width: 100%;
 }
 #navBg {
     background-color: #8b0000;
@@ -21,6 +21,8 @@ body{
     color: #fff;
 }
 .container{
+    
+
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -28,7 +30,7 @@ body{
 }
 /* Home */
 #home img{
-    width: 200px;
+    width: auto;
     height: 200px;
     margin: 30px 5px
 }
@@ -52,14 +54,3 @@ span{
 }
 
 /* footer */
-.footer-padding {
-	padding-bottom: 60px;
-}
-.footer {
-	position: absolute;
-	text-align: center;
-	bottom: 0;
-	width: 100%;
-	height: 60px;
-	background-color: #c7c7c7;
-}
