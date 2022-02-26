@@ -1,3 +1,13 @@
-body{
-    background-color: aqua;
+#navBg {
+    background-color: #8b0000;
+}
+#navBg h2{
+    color: #000;
+    background-color: #ede2da;
+    border-style: double;
+    padding: 0px 12px;
+}
+#navBg a{
+    text-align: center;
+    color: #fff;
 }
