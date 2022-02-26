@@ -15,6 +15,9 @@ app.get('/', function(req, res){
     res.render('index', { text: "Please select table before order." })
 });
 
+app.get('/allmenu', function(req, res){
+    res.render('allmenu');
+})
 app.listen(port, function(){
     console.log("Server listeming on port ", port);
 })
