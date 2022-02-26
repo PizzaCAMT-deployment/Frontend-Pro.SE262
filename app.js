@@ -13,7 +13,7 @@ app.set('views', './views/Customers');
 app.set('view engine', 'ejs');
 
 app.get('/', function(req, res){
-    res.render('index', { text: "This is MY index" })
+    res.render('index', { text: "Please select table before order." })
 });
 
 app.listen(port, function(){

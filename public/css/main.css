@@ -1,3 +1,10 @@
+body{
+    /* Set Background */
+    background-image: url("../image/customer/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
 #navBg {
     background-color: #8b0000;
 }
@@ -10,4 +17,8 @@
 #navBg a{
     text-align: center;
     color: #fff;
+}
+.container{
+    display: flex;
+    justify-content: center;
 }
