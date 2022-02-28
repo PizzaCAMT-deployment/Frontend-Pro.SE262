@@ -52,12 +52,23 @@ span{
 }
 
 /* all menu */
+h3{
+    text-shadow: 2px 2px #8b0000;
+}
+p{
+    margin: 5px 0px;
+}
 #allMenu{
     font-family: Helvetica;
     color: #fff;
 }
-h3{
-    text-shadow: 2px 2px #8b0000;
+#allMenu .text{
+    text-align: left;
+}
+#input-tab input{
+    display: unset;
+    width: 50%;
+    margin-top: 24px;
 }
 .box{
     background:rgb(0, 0, 0, 0.8);
@@ -69,12 +80,5 @@ h3{
     width: 80%;
     display: unset;
 }
-#allMenu .text p{
-    margin: 5px 0px;
-    text-align: left;
-}
-#input-tab input{
-    display: unset;
-    width: 50%;
-    margin-top: 24px;
-}
+
+

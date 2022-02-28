@@ -4,20 +4,23 @@ const port = 4040;
 
 //static to called CSS
 app.use(express.static('public'));
-app.use('/css', express.static(__dirname + '/public/css'))
-app.use('/img', express.static(__dirname + '/public/img'))
+app.use('/css', express.static(__dirname + '/public/css'));
+app.use('/img', express.static(__dirname + '/public/img'));
 
 // Set views 
 app.set('views', './views/Customers');
 app.set('view engine', 'ejs');
 
 app.get('/', function(req, res){
-    res.render('index', { text: "Please select table before order." })
+    res.render('index', { text: "Please select table before order." });
 });
-
 app.get('/allmenu', function(req, res){
     res.render('allmenu');
+});
+app.get('/maindish', function(req, res){
+    res.render('mainDishes');
 })
+
 app.listen(port, function(){
     console.log("Server listeming on port ", port);
-})
+});
