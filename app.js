@@ -18,7 +18,7 @@ app.get('/allmenu', function(req, res){
     res.render('allmenu');
 });
 app.get('/maindish', function(req, res){
-    res.render('mainDishes');
+    res.render('maindish');
 })
 
 app.listen(port, function(){
