@@ -51,4 +51,30 @@ span{
     background-color: #e8e6e6;
 }
 
-/* footer */
+/* all menu */
+#allMenu{
+    font-family: Helvetica;
+    color: #fff;
+}
+h3{
+    text-shadow: 2px 2px #8b0000;
+}
+.box{
+    background:rgb(0, 0, 0, 0.8);
+    padding: 14px;
+    border-radius: 20px;
+    margin: 28px;
+}
+.form-select{
+    width: 80%;
+    display: unset;
+}
+#allMenu .text p{
+    margin: 5px 0px;
+    text-align: left;
+}
+#input-tab input{
+    display: unset;
+    width: 50%;
+    margin-top: 24px;
+}
