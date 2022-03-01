@@ -21,7 +21,7 @@ app.get('/maindish', function(req, res){
     res.render('maindish');
 });
 app.get('/drinks', function(req, res){
-    res.render('/drinks');
+    res.render('drinks');
 });
 
 app.listen(port, function(){
