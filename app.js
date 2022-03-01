@@ -23,6 +23,9 @@ app.get('/maindish', function(req, res){
 app.get('/drinks', function(req, res){
     res.render('drinks');
 });
+app.get('/appetizer', function(req, res){
+    res.render('appetizer');
+});
 
 app.listen(port, function(){
     console.log("Server listeming on port ", port);
