@@ -19,7 +19,10 @@ app.get('/allmenu', function(req, res){
 });
 app.get('/maindish', function(req, res){
     res.render('maindish');
-})
+});
+app.get('/drinks', function(req, res){
+    res.render('/drinks');
+});
 
 app.listen(port, function(){
     console.log("Server listeming on port ", port);
