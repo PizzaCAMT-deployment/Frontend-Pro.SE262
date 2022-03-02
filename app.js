@@ -27,6 +27,11 @@ app.get('/appetizer', function(req, res){
     res.render('appetizer');
 });
 
+/** Kitchen part */
+app.get('/login',function(req, res){
+    res.render('Login');
+});
+
 app.listen(port, function(){
     console.log("Server listeming on port ", port);
 });
