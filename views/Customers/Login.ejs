@@ -1,21 +1,30 @@
 <%- include('partials/header') %>
 
 <div>
-  <img src="image/kitchen/pizzaLogo.png" alt="logo" class="logo" />
-  <form class>
-    <input
-      type="text"
-      id="UN"
-      name="username"
-      placeholder="username"
-    /><br /><br />
-    <input
-      type="text"
-      id="PS"
-      name="password"
-      placeholder="password"
-    /><br /><br />
-    <input type="submit" value="Login" />
+  <img src="img/kitchen/pizzaLogo.png" alt="logo" class="logo" />
+  <form>
+      <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+      <div class="form-floating">
+        <input
+            type="text"
+            class="form-control"
+            id="UN"
+            name="username"
+            placeholder="username"
+        />
+        <label for="floatingInput">User Name</label>
+      </div>
+      <div class="form-floating">
+        <input
+            type="text"
+            class="form-control"
+            id="PS"
+            name="password"
+            placeholder="password"
+        />
+        <label for="floatingInput">Password</label>
+      </div>
+    <button class="w-100 btn btn-lg btn-warning" type="submit" value="login">Login</button>
   </form>
 </div>
 

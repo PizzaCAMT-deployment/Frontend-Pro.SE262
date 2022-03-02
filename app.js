@@ -30,6 +30,7 @@ app.get('/appetizer', function(req, res){
 /** Kitchen part */
 app.get('/login',function(req, res){
     res.render('Login');
+    
 });
 
 app.listen(port, function(){

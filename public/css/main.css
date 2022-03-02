@@ -81,4 +81,19 @@ p{
     display: unset;
 }
 
+/* kitchen */
+h1{
+    color: #fff;
+    text-shadow: 2px 2px #8b0000;
+}
+#login{
+    margin: 0px 10px;
+    font-size: large;
+    color: #fff;
+}
+.logo{
+    display: block;
+    margin: 22px auto;
+}
+
 
