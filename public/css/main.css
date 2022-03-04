@@ -104,5 +104,7 @@ h1{
     background-image: url("../img/kitchen/stoneOven.jpg");
     border-radius: 20px;
 }
-
+tr{
+    width: 200px;
+}
 
