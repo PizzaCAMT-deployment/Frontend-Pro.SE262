@@ -92,8 +92,17 @@ h1{
     color: #fff;
 }
 .logo{
-    display: block;
+    width: 160px;
+    height: auto;
     margin: 22px auto;
+    background-color: #e8e6e6;
+    border-radius: 50%;
+}
+.loginBG{
+    padding: 8px 64px 28px;
+    margin: 32px 0px;    
+    background-image: url("../img/kitchen/stoneOven.jpg");
+    border-radius: 20px;
 }
 
 
