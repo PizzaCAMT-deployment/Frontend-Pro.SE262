@@ -38,14 +38,18 @@ app.get('/appetizer', function(req, res){
 app.get('/login',function(req, res){
     res.render('Login');
 });
+
 app.post('/loging', function(req, res){
+    const    userName = req.body.UserName;
+    const    password = req.body.Password;
+
     const data = {
-        userName = req.body.username,
-        password = req.body.password, 
+        name: userName,
+        pass: password,
     }
     admin.push(data);
     console.log(admin);
-    res.redirect('/');
+    res.render('tableList');
 })
 
 app.listen(port, function(){
