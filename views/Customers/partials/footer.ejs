@@ -4,22 +4,27 @@
       $("#allMenu .row .btn").click(function(){
         var text_id = $(this).attr("id");
         console.log("ID: "+text_id);
-        console.log("Pirce: "+ $('#'+text_id).text());
+        var prices =  $('#'+text_id).text();
+        console.log("Pirce: "+ prices);
         
-        
-        function loadTable(tableId, fields, data) {
-          var rows = '';
-          $.each(data, function(index, item) {
-            var row = '<tr>';
-              $.each(fields, function(index, field) {
-                row += '<td>' + item[field+''] + '</td>';
-              });
-              rows += row + '<tr>';
-          });
-          $('#' + tableId + ' tbody').html(rows);
+        const data = {
+          name: text_id,
+          price: prices,
         }
+        
+        // function loadTable(tableId, fields, data) {
+        //   var rows = '';
+        //   $.each(data, function(index, item) {
+        //     var row = '<tr>';
+        //       $.each(fields, function(index, field) {
+        //         row += '<td>' + item[field+''] + '</td>';
+        //       });
+        //       rows += row + '<tr>';
+        //   });
+        //   $('#' + tableId + ' tbody').html(rows);
+        // }
 
-        loadTable()
+        // loadTable()
 
       });//out of bound.
     

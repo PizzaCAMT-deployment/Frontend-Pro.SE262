@@ -1,11 +1,22 @@
+const mongoose = require('mongoose');
 const express = require('express');
 const bodyparser = require('body-parser');
 const app = express();
 const port = 4040;
 
+// Database connection 
+mongoose.connect('mongodb://127.0.0.1:27017/Pizza-CAMT-se262');
+
+const orderSchema = new mongoose.Schema({
+    name: String,
+    price: String,
+    status: String,
+});
+
+const order = mongoose.model('order', orderSchema);
+
 // Object
 const admin = [];
-const order =[];
 
 // body-parser
 app.use(bodyparser.urlencoded({ extended: true }));
