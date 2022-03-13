@@ -3,15 +3,28 @@
       
       $("#allMenu .row .btn").click(function(){
         var text_id = $(this).attr("id");
-        console.log(text_id);
-      });
+        console.log("ID: "+text_id);
+        console.log("Pirce: "+ $('#'+text_id).text());
+        
+        
+        function loadTable(tableId, fields, data) {
+          var rows = '';
+          $.each(data, function(index, item) {
+            var row = '<tr>';
+              $.each(fields, function(index, field) {
+                row += '<td>' + item[field+''] + '</td>';
+              });
+              rows += row + '<tr>';
+          });
+          $('#' + tableId + ' tbody').html(rows);
+        }
 
-      function btn(){
-        var name = $(this).attr("id");
-        alert('This is '+ name);
-      }
+        loadTable()
+
+      });//out of bound.
+    
       
-      
+
     </script>
     
     </div>
