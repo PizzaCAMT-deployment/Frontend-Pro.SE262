@@ -40,17 +40,16 @@ app.get('/login',function(req, res){
 });
 
 app.post('/loging', function(req, res){
-    const    userName = req.body.UserName;
-    const    password = req.body.Password;
-
+    const userName = req.body.UserName;
+    const password = req.body.Password;
     const data = {
         name: userName,
         pass: password,
     }
     admin.push(data);
-    console.log(admin);
+    console.log(admin);;
     res.render('tableList');
-})
+});
 
 app.listen(port, function(){
     console.log("Server listeming on port ", port);
