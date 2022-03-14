@@ -1,22 +1,7 @@
-const mongoose = require('mongoose');
 const express = require('express');
 const bodyparser = require('body-parser');
 const app = express();
 const port = 4040;
-
-// Database connection 
-mongoose.connect('mongodb://127.0.0.1:27017/Pizza-CAMT-se262', { useNewUrlParser: true, useUnifiedTopology: true})
-.then(result => console.log('connect to db'))
-.catch(err => console.log(err))
-
-const orderSchema = new mongoose.Schema({//create new schema
-    name: String,
-    price: String,
-    status: String,
-});
-
-const order = mongoose.model('order', orderSchema);//create collection
-module.exports = order;
 
 // Object
 const admin = [];
