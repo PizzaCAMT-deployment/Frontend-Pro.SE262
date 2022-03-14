@@ -1,8 +1,8 @@
 version: '3'
 services:
   app:
-    container_name: final_project
+    container_name: pizzadeploy
     restart: always
-    build: .
+    image:  mikevasaski/pizzacamt:latest
     ports:
       - "8081:8080"
