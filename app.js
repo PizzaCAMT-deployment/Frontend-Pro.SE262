@@ -5,15 +5,18 @@ const app = express();
 const port = 4040;
 
 // Database connection 
-mongoose.connect('mongodb://127.0.0.1:27017/Pizza-CAMT-se262');
+mongoose.connect('mongodb://127.0.0.1:27017/Pizza-CAMT-se262', { useNewUrlParser: true, useUnifiedTopology: true})
+.then(result => console.log('connect to db'))
+.catch(err => console.log(err))
 
-const orderSchema = new mongoose.Schema({
+const orderSchema = new mongoose.Schema({//create new schema
     name: String,
     price: String,
     status: String,
 });
 
-const order = mongoose.model('order', orderSchema);
+const order = mongoose.model('order', orderSchema);//create collection
+module.exports = order;
 
 // Object
 const admin = [];
@@ -61,6 +64,13 @@ app.post('/loging', function(req, res){
     console.log(admin);;
     res.render('tableList');
 });
+
+app.post('/sprite', (req, res) => {
+    const i = req.body.n;
+    console.log("db sprite: "+i);
+    
+    res.redirect('/drinks');
+})
 
 app.listen(port, function(){
     console.log("Server listeming on port ", port);
